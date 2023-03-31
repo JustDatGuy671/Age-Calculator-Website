@@ -1,0 +1,74 @@
+body{
+    font-family: sans-serif;
+    background-color: #f4c095;
+}
+
+form{
+    background-color: #679289;
+    border: 4px solid #1d7874;
+    border-radius: 20px;
+    max-width: 500px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: auto;
+}
+.divider-large{
+    border-bottom: 4px solid black;
+}
+.divider-small{
+    border-bottom: 2px solid black;
+}
+
+.personal-info, .birthdate, .current-age{
+    margin-bottom: 20px;
+}
+.name, .email{
+    font-size: 1rem;
+    padding: 10px; 
+    display:block;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+h1, h2, .birthdate, .birthdate input{
+    text-align: center;
+}
+h2{
+    padding: 0;
+    margin: 10px;
+}
+.birthdate, .current-age{
+    display: flex;
+    justify-content: space-evenly;
+}
+.birthdate input, .submit{
+    padding: 10px;
+    border-radius: 5px;
+}
+.current-age div{
+    background-color: #1d7874;
+    width: 30%;
+    padding: 10px 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 2rem;
+}
+button{
+    width: 100%;
+    background: #1d7874;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+button:hover{
+    background: aquamarine;
+}
+
+@media (max-width: 35rem){
+    .current-age div{
+        font-size: 1rem;
+    }
+}

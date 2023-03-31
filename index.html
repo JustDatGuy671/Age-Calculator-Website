@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="styles.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Finder</title>
+</head>
+<body>
+    <form onsubmit="return false">
+        <h1>Age Calculator</h1>
+        <div class="divider-large"></div>
+        <div class="personal-info">
+            <h2>Personal Info</h2>
+            <div class="name"><label for="name">Enter name: <input type="text" id="name" placeholder="Name" class="name" required></label></div>
+            <div class="email"><label for="email">Enter email: <input type="email" id="email" class="email" placeholder="Email Address"> </label></div>
+        </div>
+        <div class="divider-small"></div>
+        <h2>Birthdate</h2>            
+        <p>Enter birthdate below: </p>        
+        <div class="birthdate">
+            <label>
+                <input id="month" type="number" minlength="1" maxlength="2" min="1" max="12" placeholder="MM" required>
+            </label>
+            <label>
+                <input id="day" type="number" minlength="1" maxlength="2" min="1" max="31" placeholder="DD" required>
+            </label>
+            <label>
+                <input id="year" type="number" minlength="4" maxlength="4" min="1900" max="2023" placeholder="YYYY" required>
+            </label>
+        </div>
+        <div class="divider-small"></div>
+        <h2>Current Age</h2>
+        <div class="current-age">
+            <div>
+                <p>Years</p>
+                <span id="years"> - </span>
+            </div>
+            <div>
+                <p>Month</p>
+                <span id="months"> - </span>
+            </div>
+            <div>
+                <p>Days</p>
+                <span id="days"> - </span>
+            </div>
+        </div>
+        <div class="divider-small"></div>
+        <div class="submit"><button onclick="CalculateAge()">Submit</button></div>
+    </form>
+    <script src="script.js"></script>
+</body>
+    
+</html>
